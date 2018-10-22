@@ -29,7 +29,7 @@
 
 
 $nameErr = $emailErr = $phoneErr= $accountErr = $passwordErr = "";
-$name = $email = $phone = $account = $password = "";
+$name = $pic= $email = $phone = $account = $password = "";
 
 function test_input($data) {
     $data = trim($data);
@@ -78,8 +78,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     $password = test_input($_POST["password"]);
   }
-  
 }
+$pic= $_POST["file"];
 if(check_not_null(['name','email','account','password','phone'])){
 //登入資料庫
 $server = '140.131.114.154';
@@ -90,13 +90,14 @@ $database = 'sing sang song';
 $conn = new PDO("mysql:host=$server;dbname=$database", $user, $pass,array(PDO::MYSQL_ATTR_INIT_COMMAND => "set names utf8")) or die('Error with MySQL connection');
     
 
-$sql = "INSERT INTO user (user_name, user_phone, user_email, user_acc,user_paswd) 
+$sql = "INSERT INTO user (user_name, user_phone, user_email, user_acc,user_paswd,pic) 
 VALUES (
     '$name',
     '$phone',
     '$email',
     '$account',
-    '$password')";
+	'$password',
+	'$pic')";
    $conn->exec($sql);
   
 }
@@ -153,6 +154,11 @@ VALUES (
 				<div class="6u 12u$(xsmall)">
 				<h4 style="font-family:Microsoft JhengHei;">姓名<span id="error">*</span></h3>
 				<input type="text" name="name" id="name" value="" placeholder="-請輸入姓名-" /><span id="error"><?php  echo $nameErr;?></span>
+				<br>
+				<h4 style="font-family:Microsoft JhengHei;">上傳大頭貼</h3>
+				<input  type="file" name="file" id="file" />
+				<br>
+				<br>
 				<h4 style="font-family:Microsoft JhengHei;">電話<span id="error">*</span></h3>
 				<input type="text" name="phone" id="phone" value="" placeholder="-請輸入電話-" /><span id="error"><?php echo $phoneErr;?></span>
 				<h4 style="font-family:Microsoft JhengHei;">電子郵件<span id="error">*</span></h3>
