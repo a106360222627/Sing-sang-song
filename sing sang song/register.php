@@ -80,6 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 
 }
+
 if(check_not_null(['name','email','account','password','phone'])){
 //登入資料庫
 $server = '140.131.114.154';
@@ -168,6 +169,8 @@ VALUES (
 
 			<br>
 			<input id="submit" name="submit" type="submit" class="button special" style="font-family:Microsoft JhengHei;" value="註冊">
+
+
 	</div>
 
 

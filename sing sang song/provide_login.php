@@ -235,22 +235,22 @@
 
 <script>
     function myFunction2() {
-        let ttt = document.getElementById("tc").innerHTML = "您選擇的是：姓名標示";
+        let ttt = document.getElementById("tc").innerHTML = "您選擇：姓名標示";
         }
     function myFunction3() {
-        let ttt = document.getElementById("tc").innerHTML = "您選擇的是：姓名標示─非商業性";
+        let ttt = document.getElementById("tc").innerHTML = "您選擇：姓名標示,非商業性";
     }
     function myFunction4() {
-        let ttt = document.getElementById("tc").innerHTML = "您選擇的是：姓名標示─非商業性─相同方式分享";
+        let ttt = document.getElementById("tc").innerHTML = "您選擇：姓名標示,非商業性,相同方式分享";
     }
     function myFunction5() {
-        let ttt = document.getElementById("tc").innerHTML = "您選擇的是：姓名標示─禁止改作";
+        let ttt = document.getElementById("tc").innerHTML = "您選擇：姓名標示,禁止改作";
     }
     function myFunction6() {
-        let ttt = document.getElementById("tc").innerHTML = "您選擇的是：姓名標示─非商業性─禁止改作";
+        let ttt = document.getElementById("tc").innerHTML = "您選擇：姓名標示,非商業性,禁止改作";
     }
     function myFunction7() {
-        let ttt = document.getElementById("tc").innerHTML = "您選擇的是：姓名標示─相同方式分享";
+        let ttt = document.getElementById("tc").innerHTML = "您選擇：姓名標示,相同方式分享";
     }
 </script>
 
