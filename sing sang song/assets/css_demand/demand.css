@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+
+#main{
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    margin-bottom: 0px;
+    box-shadow:0px 5px 10px 0px #333;
+    padding:40px;
+    
+}
+#submit{
+    position: relative;
+    left:650px;
+}
+#txt,#elements,#voice{
+    font-size: 20px;
+    position: relative;
+    left:50px;
+}
+h3,.radios,#file,#txttt{
+    position: relative;
+    left:50px;
+}
+#age,#sex{
+    position: relative;
+    width:400px;
+    left:50px;
+}
+#lbl_money{
+    font-size:16px;
+    position: relative;
+    left:50px;
+    top:5px;
+}
+#txt_money{
+    position: relative;
+    left:100px;
+    top:-35px;
+    width: 150px;
+    height: 30px;
+}
+#txt_other{
+    width: 120px;
+	border-radius: 2px;
+	border:1px rgb(179, 174, 174) solid;
+	color: inherit;
+	display: block;
+	outline: 0;
+	padding:5px;
+    text-decoration: none;
+    height:25px;
+    position: relative;;
+    top:-38px;
+    left: 75px;
+}
+div.vocal_1,div.vocal_2,div.vocal_3{
+    width: 800px;
+    position: relative;
+    left: 50px;
+}
+div.vocal_1 label:nth-child(2),
+div.vocal_1 label:nth-child(4),
+div.vocal_1 label:nth-child(6),
+div.vocal_1 label:nth-child(8){
+   margin-right:30px;
+}
+div.vocal_2 label:nth-child(2),
+div.vocal_2 label:nth-child(4),
+div.vocal_2 label:nth-child(6),
+div.vocal_2 label:nth-child(8){
+   margin-right:30px;
+}
+
+.btn_enter{
+    position: relative;
+    top:20px;
+}
+#txt_title{
+    position: relative;
+    top:-42px;
+    left: 110px;
+    width: 300px;
+    height: 30px;
+}

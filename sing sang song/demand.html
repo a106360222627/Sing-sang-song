@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<!-- crease -->
+	<link rel="stylesheet" type="text/css" href="assets/css_crease/demo.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css_crease/style_common.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css_crease/style1.css" />
+	<script type="text/javascript" src="assets/js_crease/modernizr.custom.69142.js"></script>
+	
+	<link rel="stylesheet" href="assets/css_demand/demand.css" />
+
+	<title>刊登需求</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header id="header">
+		<div class="logo"><a href="index.html" style="font-family:Microsoft JhengHei;">登入 <span style="font-family:Microsoft JhengHei;">註冊</span></a></div>
+		<a href="#menu">Menu</a>
+	</header>
+
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="index.html">首頁</a></li>
+			<li><a href="generic.html">會員資料</a></li>
+			<li><a href="elements.html">設定</a></li>
+		</ul>
+	</nav>
+
+	<!-- One -->
+	<section id="One" class="wrapper style3">
+		<div class="inner">
+			<header class="align-center">
+				<p>DO ur best</p>
+				<h2 style="font-family:Microsoft JhengHei;">刊登需求</h2>
+			</header>
+		</div>
+	</section>
+
+	<!-- Main -->
+	<div id="main" class="container">
+		<!--============-表單===========-->
+		<form>
+			<div class="6u 12u$(small)">
+			<h3 class="h">標題：</h3><input id="txt_title" type="text" name="money">
+			<!--------------- -聲音類型- ---------------- -->
+			
+				<h3 class="h">需求類型</h3>
+
+				<form class="voice" id="voice">
+					<div class="vocal_1">
+
+					<input type="checkbox" id="vocal2" name="vocal2">
+					<label for="vocal2" style="font-family:Microsoft JhengHei;">溫柔</label>
+
+					<input type="checkbox" id="vocal3" name="vocal3">
+					<label for="vocal3" style="font-family:Microsoft JhengHei;">陽光</label>
+
+					<input type="checkbox" id="vocal4" name="vocal4">
+					<label for="vocal4" style="font-family:Microsoft JhengHei;">高亢</label>
+
+					<input type="checkbox" id="vocal5" name="vocal5">
+					<label for="vocal5" style="font-family:Microsoft JhengHei;">圓潤</label>
+					</div>
+					<div class="vocal_2">
+					<input type="checkbox" id="vocal6" name="vocal6">
+					<label for="vocal6" style="font-family:Microsoft JhengHei;">尖銳</label>
+
+					<input type="checkbox" id="vocal7" name="vocal7">
+					<label for="vocal7" style="font-family:Microsoft JhengHei;">陰沉</label>
+
+					<input type="checkbox" id="vocal8" name="vocal8">
+					<label for="vocal8" style="font-family:Microsoft JhengHei;">恐怖</label>
+
+					<input type="checkbox" id="vocal9" name="vocal9">
+					<label for="vocal9" style="font-family:Microsoft JhengHei;">口齒不清</label>
+					</div>
+					<div class="vocal_3" id="voice10">
+						<input id="vocal11" type="checkbox" name="text" value="Other">
+						<label for="vocal11" style="font-family:Microsoft JhengHei;">其他</label>
+						<input style="display:none" type="text" id="txt_other" name="text">
+					</div>
+
+				</form>
+
+			</div>
+
+			<!--==================專案簡介=====================-->
+			<h3>費用結算方式</h3>
+				<div class="radios">
+					<input type="radio" id="how2" name="how">
+					<label for="how2" style="font-family:Microsoft JhengHei;">計次</label>
+
+					<input type="radio" id="how3" name="how">
+					<label for="how3" style="font-family:Microsoft JhengHei;">天數</label>
+
+					<input type="radio" id="how4" name="how">
+					<label for="how4" style="font-family:Microsoft JhengHei;">集數</label>
+
+					<input type="radio" id="how5" name="how">
+					<label for="how5" style="font-family:Microsoft JhengHei;">周期</label>
+
+
+				</div>
+			
+			<div>
+				<label id="lbl_money" for="how6" style="font-family:Microsoft JhengHei;">金額：</label>
+				<input id="txt_money" type="text" name="money">
+			</div>
+			<div class="clear"></div>
+			<!--==================上傳影片=====================-->
+			<h3>選擇檔案</h3>
+			<div action="upload.php" method="post" enctype="multipart/form-data">
+
+				<input type="file" name="file" id="file" />
+			</div>
+<br>
+
+			<!--==================專案簡介=====================-->
+			<h3>專案簡介</h3>
+			<textarea placeholder="介紹專案內容、描述需求聲音個性類型" style=" resize:none;width:700px;height:100px;" id="txttt";></textarea>
+			<label class="btn btn-info">
+				<input id="submit" name="submit" type="submit" class="btn_enter" value="確認上傳">
+
+		</form>
+
+
+		</code></pre>
+
+	</div>
+	</div>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="container">
+			<ul class="icons">
+				<li><a href="https://twitter.com/?lang=zh-tw" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="https://zh-tw.facebook.com/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="https://mail.google.com/" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			&copy; NTUB IMD
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+	<script>
+		function myFunction() {
+			let t = document.getElementById("tt");
+			t.style.display = "block";
+
+
+			for (let i = 1; i++; i <= 10) {
+				let checkBox = document.getElementById("vocal" + i);
+				let text = document.getElementById("text" + i);
+				if (checkBox.checked === true) {
+					text.style.display = "block";
+					$("#tr" + i).show();
+				} else {
+					text.style.display = "none";
+					$("#tr" + i).hide();
+				}
+
+			}
+		}
+
+		$(document).ready(function () {
+			$("#show").click(function () {
+				$("#tr1").show();
+			});
+		});
+
+	</script>
+</body>
+
+</html>
