@@ -8,11 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="assets/css_crease/style_common.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css_crease/style1.css" />
 	<script type="text/javascript" src="assets/js_crease/modernizr.custom.69142.js"></script>
-	<!-- dialog -->
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="assets/css_program_list/program_list.css" />
 
-	<title>專案</title>
+	<link rel="stylesheet" href="assets/css_provide/provide.css" />
+
+	<title>提供聲音</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -24,29 +23,34 @@
 <body>
 
 	<!-- Header -->
-	<header id="header" class="alt">
-		<div class="logo" ><a href="index.html" style="font-family:Microsoft JhengHei;">登出  <a href="generic_login.html"> <span style="font-family:Microsoft JhengHei;">志龍，您好</span></a></a></div>
+	<header id="header">
+		<div class="logo">
+			<a href="index.html" style="font-family:Microsoft JhengHei;">登出
+				<a href="generic_login.html">
+					<span style="font-family:Microsoft JhengHei;">志龍，您好</span>
+				</a>
+			</a>
+		</div>
 		<a href="#menu">Menu</a>
 	</header>
-
 
 	<!-- Nav -->
 	<nav id="menu">
 		<ul class="links">
 			<li>
-				<a href="index_login.html">首頁</a>
+				<a href="index_login.php">首頁</a>
 			</li>
 			<li>
-				<a href="generic_login.html">會員資料</a>
+				<a href="generic_login.php">會員資料</a>
 			</li>
 			<li>
-				<a href="vocal_login.html">搜尋聲音</a>
+				<a href="vocal_login.php">搜尋聲音</a>
 			</li>
 			<li>
 				<a href="login.html">專案</a>
 			</li>
 			<li>
-				<a href="login.html">登出</a>
+				<a href="index.php">登出</a>
 			</li>
 		</ul>
 	</nav>
@@ -55,67 +59,44 @@
 	<section id="One" class="wrapper style3">
 		<div class="inner">
 			<header class="align-center">
-				<p>Do Ur Best</p>
-				<h2 style="font-family:Microsoft JhengHei;">專案</h2>
+				<p>do ur best</p>
+				<h2 style="font-family:Microsoft JhengHei;">加入我們</h2>
 			</header>
 		</div>
 	</section>
-	
-	<!-- Main -->
 
+	<!-- Main -->
 	<div id="main" class="container">
 
-		<div class="table-wrapper">
-			<table>
-				<thead>
-					<tr id="tr1" style="">
-						<th>標題</th>
-						<th>刊登時間</th>
-						<th>上傳者</th>
 
-					</tr>
-				</thead>
-				<tbody>
-					<tr id="tr2" style="">
-						<td><a href="pro-inside.html">【接案】兒童週刊配音</a></td>
-						<td>2018.10.01</td>
-						<td>Ya-Wei</td>
-					</tr>
-					<tr id="tr2" style="">
-						<td><a href="demandforpostman.html">【接案】卡通配音人員</a></td>
-						<td>2018.09.23</td>
-						<td>Barack Obama</td>
-					</tr>
-					<tr id="tr2" style="">
-						<td><a href="demandforpostman.html">【接案】英文動畫人員</a></td>
-						<td>2018.07.15</td>
-						<td>Ya-Wei</td>
-					</tr>
-					<tr id="tr2" style="">
-						<td><a href="demandforpostman.html">【接案】台語配音</a></td>
-						<td>2018.08.10</td>
-						<td>Taylor</td>
-					</tr>
-					<tr id="tr2" style="">
-						<td><a href="demandforpostman.html">【接案】商業週刊配音</a></td>
-						<td>2018.08.18</td>
-						<td>yu husn</td>
-					</tr>
-				
-				</tbody>
-			</table>
-		</div>
-		<label style="font-size:15px;margin-left:430px;">第 <span style="color:blue; font-size:20px;">1</span> 頁</label>
-	</div>
+		<!-- 音檔資料 -->
+		<h2 id="elements">音檔資料</h2>
 
-	</form>
+		<form action="upload.php" enctype="multipart/form-data" method="post">
+			<div id="txt" class="row uniform">
+				<div class="6u 12u$(xsmall)">
 
-	</div>
-
-	</div>
+						<h4 style="font-family:Microsoft JhengHei;">上傳檔案</h3>
+							<input type="file" name="file" id="file" />
+							<br>
+							<br>
+							<h4 style="font-family:Microsoft JhengHei;">演出者</h3>
+								<input type="text" name="name" id="name" value="Ya-Wei" />
+								<br>
+								<a href="demandforpostman.html" class="button alt" style="font-family:Microsoft JhengHei; font-weight:bold;">確認上傳</a>
+				</div>
+			</div>
+			<!-- Elements -->
 
 
-	
+
+					</div>
+
+
+
+
+
+
 	<!-- Footer -->
 	<footer id="footer">
 		<div class="container">
@@ -148,11 +129,10 @@
 	</footer>
 
 	<!-- Scripts -->
-
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js_provide/scripts.js"></script>
+	<script src="assets/js_provide/scripts_other.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 

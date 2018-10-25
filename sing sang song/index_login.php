@@ -10,20 +10,37 @@
 	<body>
 
 		<!-- Header -->
-			<header id="header" class="alt">
-				<div class="logo" ><a href="index.html" style="font-family:Microsoft JhengHei;">登出  <a href="generic_login.html"> <span style="font-family:Microsoft JhengHei;">志龍，您好</span></a></a></div>
+		 <?php
+              require 'config.php';
+                $user = "SELECT user_name FROM user ";
+
+
+			echo'<header id="header" class="alt">
+				<div class="logo" ><a href="index.php" style="font-family:Microsoft JhengHei;">登出  <a href="generic_login.html"> <span style="font-family:Microsoft JhengHei;">志龍，您好</span></a></a></div>
 				<a href="#menu">Menu</a>
-			</header>
+			</header>';
+          ?>
 
 		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index_login.html">首頁</a></li>
-					<li><a href="generic_login.html">會員資料</a></li>
-					<li><a href="vocal_login.html">搜尋聲音</a></li>
-					<li><a href="index.html">登出</a></li>
-				</ul>
-			</nav>
+	<nav id="menu">
+		<ul class="links">
+			<li>
+				<a href="index_login.php">首頁</a>
+			</li>
+			<li>
+				<a href="generic_login.php">會員資料</a>
+			</li>
+			<li>
+				<a href="vocal_login.php">搜尋聲音</a>
+			</li>
+			<li>
+				<a href="program_list.html">專案</a>
+			</li>
+			<li>
+				<a href="index.php">登出</a>
+			</li>
+		</ul>
+	</nav>
 
 		<!-- Banner -->
 			<section class="banner full">
@@ -91,7 +108,7 @@
 									</header>
 									<p style="font-family:Microsoft JhengHei;"> 在工作或生活中想要剪輯一支影片、設計一支微電影,這時候是不是需要一些背景音樂或是利用配音增添一點色彩呢?這時侯你需要配上一些音效,需要旁白的聲音,讓影片中熙來攘往的城市場景多一種力量。一位好的配音員能夠賦予角色生命力。</p>
 									<footer class="align-center">
-										<a href="#" class="button alt" style="font-family:Microsoft JhengHei; font-weight:bold;">點擊進入</a>
+										<a href="list.html" class="button alt" style="font-family:Microsoft JhengHei; font-weight:bold;">點擊進入</a>
 									</footer>
 								</div>
 							</div>

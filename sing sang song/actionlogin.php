@@ -30,7 +30,7 @@ $result = $sth->fetch(PDO::FETCH_OBJ);
 
 if( $result ) {  //若有資料，表示帳號密碼正確，設定Session，並導向 login.php
 $_SESSION['LoginSuccess'] = true;
-header("location:index.php");
+header("location:index_login.php?refer=???");
 }
 else {  //如果
 echo "<h1 style='color:red;'>帳號密碼錯誤，請重新登入。</h1>";
@@ -41,3 +41,14 @@ $pdo = NULL;
 }
 
 ?>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+</head>
+
+<body>
+<img src="images/fail.png" alt="" />
+</body>
+</html>

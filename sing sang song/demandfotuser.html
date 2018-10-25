@@ -25,11 +25,7 @@
 
 	<!-- Header -->
 	<header id="header" class="alt">
-		<div class="logo">
-			<a id="login_1" style="font-family:Microsoft JhengHei;">登入</button>
-				<span style="font-family:Microsoft JhengHei;">註冊</span>
-			</a>
-		</div>
+		<div class="logo" ><a href="index.html" style="font-family:Microsoft JhengHei;">登出  <a href="generic_login.html"> <span style="font-family:Microsoft JhengHei;">志龍，您好</span></a></a></div>
 		<a href="#menu">Menu</a>
 	</header>
 
@@ -38,16 +34,19 @@
 	<nav id="menu">
 		<ul class="links">
 			<li>
-				<a href="index_login.html">首頁</a>
+				<a href="index_login.php">首頁</a>
 			</li>
 			<li>
-				<a href="generic_login.html">會員資料</a>
+				<a href="generic_login.php">會員資料</a>
 			</li>
 			<li>
-				<a href="vocal_login.html">搜尋聲音</a>
+				<a href="vocal_login.php">搜尋聲音</a>
 			</li>
 			<li>
-				<a href="login.html">登入</a>
+				<a href="login.html">專案</a>
+			</li>
+			<li>
+				<a href="index.php">登出</a>
 			</li>
 		</ul>
 	</nav>
@@ -67,7 +66,7 @@
 
 
 		<!-- 音檔資料 -->
-		<h2 id="elements">【接案】兒童週刊配音</h2><button id="application">Join us</button>
+		<h2 id="elements">【接案】兒童週刊配音</h2><a href="join_us.html"><button id="application">Join us</button></a>
 		<form>
 
 			<!--------------- -聲音類型- ---------------- -->
@@ -105,7 +104,44 @@
 	請統一錄音文字：今天天氣真好！想去陽明山上吹風。請注意：請勿多加語助詞，謝謝。
 </p>
 
-		</form>
+		<form>
+		<div class="table-wrapper">
+			<table>
+				<thead>
+				<tr id="tr1" style="">
+					<th>音檔</th>
+					<th>演出者</th>
+
+				</tr>
+				</thead>
+				<tbody>
+
+				<tr id="tr2" style="">
+					<td>
+						<audio controls>
+							<source  src="music/m1.mp3" type="audio/mpeg" >
+							Your browser does not support the audio tag.
+						</audio>
+					</td>
+					<td><input type="checkbox" ><label>xin rong</label></td>
+				</tr>
+				<tr id="tr2" style="">
+					<td>
+						<audio controls>
+							<source  src="music/m1.mp3" type="audio/mpeg" >
+							Your browser does not support the audio tag.
+						</audio>
+					</td>
+					<td><input type="checkbox" ><label>Barack Obama</label></td>
+				</tr>
+
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+
+	</form>
 
 		</div>
 	</div>

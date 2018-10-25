@@ -57,7 +57,7 @@
 	<section id="One" class="wrapper style3">
 		<div class="inner">
 			<header class="align-center">
-				<p>sing sang song</p>
+				<p>do ur best</p>
 				<h2 style="font-family:Microsoft JhengHei;">提供聲音</h2>
 			</header>
 		</div>

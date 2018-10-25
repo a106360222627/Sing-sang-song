@@ -52,13 +52,13 @@
 							<header class="align-center">
 								<a href="https://www.youtube.com/watch?v=cnevlbEy-Qo"><img src="images/GD.jpg" alt="" /></a>
 								<p>G-Dragon</p>
-								<h2 style="font-family:Microsoft JhengHei; font-weight:bold;">權志龍</h2>
+								<h2 style="font-family:Microsoft JhengHei; font-weight:bold;">梓月穎</h2>
 							</header>
-							<p style="font-family:Microsoft JhengHei; font-weight:bold;">權志龍（韓語：권지용，英語：Kwon Ji Yong，日語：クォン・ジヨン，1988年8月18日－），韓國歌手、饒舌者及詞曲作者。他以藝名G-DRAGON（韓語：지드래곤，日語：ジードラゴン）為人熟知，為YG娛樂旗下男子團體BIGBANG之隊長。2006年，18歲時以新人Hip-hop偶像組合BIGBANG的隊長正式出道，並於團體中擔任Rapper和副唱。</p>
+							<p style="font-family:Microsoft JhengHei; font-weight:bold;">Saluton~</br>我是梓</br>一個就算玩pokemon go也不一定願意出門的人</br>Soy chica también soy gato, jaja.</p>
 
-							<p style="font-family:Microsoft JhengHei; font-weight:bold;">現今的他為韓國YG娛樂主要製作人之一。2012年時韓國某家媒體曾計算過如果G-Dragon一年不工作，他仍會有幾千萬的版稅收入，現今仍是韓國演藝圈每年最多歌曲版稅收入的第一位。韓國音樂著作權家協會登記編號為W0726200。</p>
+							<p style="font-family:Microsoft JhengHei; font-weight:bold;">喜歡唱歌，喜歡分享</br>現在還是配音菜鳥，未來繼續努力中！</br>喜歡配音的大家一起努力吧~</p>
 
-							<p style="font-family:Microsoft JhengHei; font-weight:bold;">2017年，收到服兵役的「兵單」，2018年2月入伍。並將於2019年11月26日退伍。</p>
+							<p style="font-family:Microsoft JhengHei; font-weight:bold;">下面有我的作品，請大家不要嫌棄</br>どうぞよろしくお願いします！</p>
 						</div>
 					</div>
 					
