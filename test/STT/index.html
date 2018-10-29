@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="sing sang song.studio">
+  <meta name="copyright" content="sing sang song.studio">
+  <meta name="viewport" content="width=device-width">
+  <title>Stt & Spectrogram</title>
+  <link href="styles/app.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<h1  id="show" ></h1>
+<script>
+    let show = document.getElementById('show');
+    let recognition = new webkitSpeechRecognition();
+
+    recognition.continuous=true;
+    recognition.interimResults=true;
+    recognition.lang="cmn-Hant-TW";
+
+    recognition.onstart=function(){
+        console.log('開始辨識...');
+    };
+    recognition.onend=function(){
+        console.log('停止辨識!');
+    };
+
+    recognition.onresult=function(event){
+        let i = event.resultIndex;
+        let j = event.results[i].length-1;
+        show.innerHTML = event.results[i][j].transcript;
+    };
+
+    recognition.start();
+</script>
+
+<div class="wrapper">
+
+
+  <canvas class="visualizer" width="640" height="100"></canvas>
+
+  <form class="controls">
+    <div style="visibility:hidden">
+      <select id="voice" name="voice">
+        <option value="distortion">Distortion</option>
+        <option value="convolver">Reverb</option>
+        <option value="biquad">Bass Boost</option>
+        <option value="off" selected>Off</option>
+      </select>
+    </div>
+    <div style="visibility:hidden">
+      <select id="visual" name="visual">
+        <option value="sinewave">Sinewave</option>
+        <option value="frequencybars" selected>Frequency bars</option>
+        <option value="off">Off</option>
+      </select>
+    </div>
+
+  </form>
+
+
+</div>
+
+
+
+<!-- The following element pulls in the script for the default template functionality -->
+
+<script src="scripts/install.js"></script>
+
+<!-- Below is your custom application script -->
+
+<script src="scripts/app.js"></script>
+
+</body>
+</html>

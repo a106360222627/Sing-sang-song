@@ -21,19 +21,30 @@
 		
 		<!-- Header -->
 			<header id="header">
-				<div class="logo" ><a href="index.html" style="font-family:Microsoft JhengHei;">登出  <a href="generic_login.html"> <span style="font-family:Microsoft JhengHei;">志龍，您好</span></a></a></div>
+				<div class="logo" ><a href="index.html" style="font-family:Microsoft JhengHei;">登出  <a href="generic_login.html"> <span style="font-family:Microsoft JhengHei;">Ya-Wei，您好</span></a></a></div>
 				<a href="#menu">Menu</a>
 			</header>
 
 		<!-- Nav -->
 			<nav id="menu">
-				<ul class="links">
-					<li><a href="index_login.php">首頁</a></li>
-					<li><a href="generic_login.php">會員資料</a></li>
-					<li><a href="vocal_login.php">搜尋聲音</a></li>
-					<li><a href="index.php">登出</a></li>
-				</ul>
-			</nav>
+            		<ul class="links">
+            			<li>
+            				<a href="index_login.php">首頁</a>
+            			</li>
+            			<li>
+            				<a href="generic_login.php">會員資料</a>
+            			</li>
+            			<li>
+            				<a href="vocal_login.php">搜尋聲音</a>
+            			</li>
+            			<li>
+            				<a href="program_list.html">專案</a>
+            			</li>
+            			<li>
+            				<a href="index.php">登出</a>
+            			</li>
+            		</ul>
+            	</nav>
 
 		<!-- One -->
 			<section id="One" class="wrapper style3">
@@ -84,6 +95,18 @@
 												</select>
 											</div>
 										</div>
+
+										<div class="12u$">
+                                             <div class="select-wrapper">
+                                             <h3 style="font-family:Microsoft JhengHei;">語速</h3>
+                                                  <select name="sex" id="sex">
+                                                  <option value="1">- 選擇語速 -</option>
+                                                  <option value="2">快速</option>
+                                                  <option value="3">中等</option>
+                                                  <option value="4">慢速</option>
+                                             </select>
+                                             </div>
+                                        </div>
 
 										<div class="6u 12u$(small)">
 										<h3 style="font-family:Microsoft JhengHei;">聲音類型</h3>

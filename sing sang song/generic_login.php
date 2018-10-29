@@ -19,7 +19,7 @@
 		
 		<!-- Header -->
 			<header id="header">
-				<div class="logo" ><a href="index.php" style="font-family:Microsoft JhengHei;">登出  <a href="generic_login.html"> <span style="font-family:Microsoft JhengHei;">志龍，您好</span></a></a></div>
+				<div class="logo" ><a href="index.php" style="font-family:Microsoft JhengHei;">登出  <a href="generic_login.php"> <span style="font-family:Microsoft JhengHei;">Ya-Wei，您好</span></a></a></div>
 				<a href="#menu">Menu</a>
 			</header>
 
@@ -50,8 +50,8 @@
 					<div class="box">
 						<div class="content">
 							<header class="align-center">
-								<a href="https://www.youtube.com/watch?v=cnevlbEy-Qo"><img src="images/GD.jpg" alt="" /></a>
-								<p>G-Dragon</p>
+								<a href="https://www.youtube.com/watch?v=cnevlbEy-Qo"><img src="images/pig9.jpg" alt="" /></a>
+								<p>G-Cat</p>
 								<h2 style="font-family:Microsoft JhengHei; font-weight:bold;">梓月穎</h2>
 							</header>
 							<p style="font-family:Microsoft JhengHei; font-weight:bold;">Saluton~</br>我是梓</br>一個就算玩pokemon go也不一定願意出門的人</br>Soy chica también soy gato, jaja.</p>
@@ -69,7 +69,7 @@
 			<section id="three" class="wrapper style3">
 				<div class="inner">
 					<header class="align-center">
-						<p style="font-family:Microsoft JhengHei; font-weight:bold;">G-DRAGON合作的熱門專案展示區</p>
+						<p style="font-family:Microsoft JhengHei; font-weight:bold;">G-CAT合作的熱門專案展示區</p>
 						<h2 style="font-family:Microsoft JhengHei;">專案分享</h2>
 					</header>
 				</div>
@@ -86,7 +86,7 @@
 							<span data-icon="B">187</span>
 							<a href="https://www.youtube.com/watch?v=doFK7Eanm3I">&rarr;</a>
 						</div>
-						<img src="images/gd1.jpg" />
+						<img src="images/z1.jpg" />
 					</div>
 					<div class="view">
 						<div class="view-back">
@@ -94,7 +94,7 @@
 							<span data-icon="B">102</span>
 							<a href="https://www.youtube.com/watch?v=j57IzkTFnT8">&rarr;</a>
 						</div>
-						<img src="images/gd2.jpg" />
+						<img src="images/z2.jpg" />
 					</div>
 					<div class="view">
 						<div class="view-back">
@@ -102,7 +102,7 @@
 							<span data-icon="B">361</span>
 							<a href="https://www.youtube.com/watch?v=1ZRb1we80kM">&rarr;</a>
 						</div>
-						<img src="images/gd3.jpg" />
+						<img src="images/z3.jpg" />
 					</div>
 					<div class="view">
 						<div class="view-back">
@@ -110,7 +110,7 @@
 							<span data-icon="B">130</span>
 							<a href="https://www.youtube.com/watch?v=RKhsHGfrFmY">&rarr;</a>
 						</div>
-						<img src="images/gd4.jpg" />
+						<img src="images/z4.jpg" />
 					</div>
 				</div>
 			

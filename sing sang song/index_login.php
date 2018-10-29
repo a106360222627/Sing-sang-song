@@ -16,7 +16,7 @@
 
 
 			echo'<header id="header" class="alt">
-				<div class="logo" ><a href="index.php" style="font-family:Microsoft JhengHei;">登出  <a href="generic_login.html"> <span style="font-family:Microsoft JhengHei;">志龍，您好</span></a></a></div>
+				<div class="logo" ><a href="index.php" style="font-family:Microsoft JhengHei;">登出  <a href="generic_login.html"> <span style="font-family:Microsoft JhengHei;">Ya-Wei，您好</span></a></a></div>
 				<a href="#menu">Menu</a>
 			</header>';
           ?>
@@ -126,7 +126,7 @@
 									</header>
 									<p style="font-family:Microsoft JhengHei;"> 我們希望透過這個平台,可以讓使用者「認識配音、參與配音、加入配音」。使用者錄製聲音或上傳聲音履歷,也可以錄製簡單的問候語,整合後提供需求者試聽,讓需求者不必在各個網站中穿梭找尋影片的配音。也使聲音提供者在我們的平台有嶄露頭角機會</p>
 									<footer class="align-center">
-										<a href="provide_login.html" class="button alt" style="font-family:Microsoft JhengHei; font-weight:bold;">點擊進入</a>
+										<a href="provide_login.php" class="button alt" style="font-family:Microsoft JhengHei; font-weight:bold;">點擊進入</a>
 									</footer>
 								</div>
 							</div>
@@ -156,12 +156,12 @@
 					<div class="gallery">
 						<div>
 							<div class="image fit">
-								<a href="generic_login.html"><img src="images/p0.jpg" alt="" width="200" height="375" /></a>
+								<a href="generic_login.php"><img src="images/p0.jpg" alt="" width="200" height="375" /></a>
 							</div>
 						</div>
 						<div>
 							<div class="image fit">
-								<a href="vocal_login.html"><img src="images/p1.jpg" alt=""  width="200" height="375" /></a>
+								<a href="vocal_login.php"><img src="images/p1.jpg" alt=""  width="200" height="375" /></a>
 							</div>
 						</div>
 				</div>
