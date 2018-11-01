@@ -32,10 +32,10 @@
       $sth = $conn->prepare($sql);
 
       //取得記錄數
-      $total_records = mysqli_num_rows($result);
+      $count->execute();    
 
       //計算總頁數
-      $total_pages = ceil($total_records / $records_per_page);
+      $total_pages = ceil($count / $records_per_page);
 
       //計算本頁第一筆記錄的序號
       $started_record = $records_per_page * ($page - 1);
