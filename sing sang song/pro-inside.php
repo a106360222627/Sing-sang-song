@@ -33,7 +33,7 @@
 	$conn = new PDO("mysql:host=$server;dbname=$database", $user, $pass,array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8')) or die('Error with MySQL connection');
 	
 	
-	$sql = "SELECT * FROM `program` where prog_id='7'";
+	$sql = "SELECT * FROM `program` where prog_id='48'";
 	$query =$conn->query($sql);
 	$query->setFetchMode(PDO::FETCH_ASSOC);//
 	 foreach($query as $row)
@@ -47,9 +47,10 @@
 	}
 	$name=$row['prog_name'];
 	$intro=$row['prog_intro'];
-	$pay=$row['pay'];
+	$pay=unserialize($row['pay']);
 	$price=$row['price'];
-	$classifi=$row['prog_clasifi'];
+	//$pay=unserialize($row['pay']);
+	$classifi=unserialize($row['prog_clasifi']);
 	$file=$row['prog_upload'];
 	
 ?>
@@ -113,7 +114,7 @@
 		<!--==================專案簡介=====================-->
 		<h3>費用計算方式</h3>
 			<div>
-				<div class="txt_in"><?php echo $pay;?>，<?php echo $price;?></div>
+				<div class="txt_in"><?php echo $pay ;?>，<?php echo $price;?></div>
 			</div>
 
 		<!--==================上傳影片=====================-->
