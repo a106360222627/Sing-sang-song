@@ -29,7 +29,7 @@
 
 
 $nameErr = $emailErr = $phoneErr= $accountErr = $passwordErr = "";
-$name = $pic= $email = $phone = $account = $password = "";
+$name = $pic = $email = $phone = $account = $password = "";
 
 function test_input($data) {
     $data = trim($data);
@@ -78,9 +78,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     $password = test_input($_POST["password"]);
   }
+
+	$pic= test_input(@$_POST["pic"]);
+  
 }
-$pic= $_POST["file"];
-if(check_not_null(['name','email','account','password','phone'])){
+
+if(check_not_null(['name','email','account','password','phone','pic'])){
 //登入資料庫
 $server = '140.131.114.154';
 $user = 'root123';

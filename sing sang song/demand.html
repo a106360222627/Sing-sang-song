@@ -97,12 +97,11 @@
 					<input type="checkbox" id="vocal9" name="vocal9">
 					<label for="vocal9" style="font-family:Microsoft JhengHei;">口齒不清</label>
 					</div>
-					<div class="vocal_3" id="voice10">
+					<div class="vocal_3" id="vocal10">
 						<input id="vocal11" type="checkbox" name="text" value="Other">
 						<label for="vocal11" style="font-family:Microsoft JhengHei;">其他</label>
-						<input style="display:none" type="text" id="txt_other" name="text">
+						<input style="display: none" type="text" id="txt_other" name="text">
 					</div>
-
 				</form>
 
 			</div>
@@ -170,40 +169,42 @@
 	</footer>
 
 	<!-- Scripts -->
+	
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/skel.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js_provide/scripts_other.js"></script>
+<script>
+
+$(function () {
+    
+
+    $('#vocal10').click(function () {
+
+        var chk = [];
+        $('#vocal10 input:checkbox:checked[name="text"]').each(
+            function (i) {
+                chk[i + 1] = this.value;
+            }
+        );
 
 
-	<script>
-		function myFunction() {
-			let t = document.getElementById("tt");
-			t.style.display = "block";
+        var str = chk.toString();
+        if (str.toLowerCase().indexOf('other') >= 0) {
+            $('#txt_other').show();
+        }
+        else {
+            $('#txt_other').hide();
+        }
 
+    });
 
-			for (let i = 1; i++; i <= 10) {
-				let checkBox = document.getElementById("vocal" + i);
-				let text = document.getElementById("text" + i);
-				if (checkBox.checked === true) {
-					text.style.display = "block";
-					$("#tr" + i).show();
-				} else {
-					text.style.display = "none";
-					$("#tr" + i).hide();
-				}
+});
 
-			}
-		}
-
-		$(document).ready(function () {
-			$("#show").click(function () {
-				$("#tr1").show();
-			});
-		});
-
-	</script>
+</script>
+	
 </body>
 
 </html>

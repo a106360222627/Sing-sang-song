@@ -5,15 +5,13 @@
     <meta name="author" content="sing sang song.studio">
     <meta name="copyright" content="sing sang song.studio">
 	<meta name="viewport" content="width=device-width">
-	<title>Stt & Spectrogram</title>
+	<title>Voice-change-O-matic</title>
     <link href="styles/app.css" rel="stylesheet" type="text/css">
 	
 </head>
 <body>
 
   <h1  id="show" ></h1>
-  <button id="start"  onclick="myFunction1()"  style="width:120px;height:40px;border:2px black; font-family:Microsoft JhengHei; font-weight:bold;">開始錄音</button>
-  <button id="stop"  onclick="myFunction2()"  style="width:120px;height:40px;border:2px black; font-family:Microsoft JhengHei; font-weight:bold;">結束錄音</button>
   <script>
       let show = document.getElementById('show');
       let recognition = new webkitSpeechRecognition();
@@ -35,23 +33,13 @@
           show.innerHTML = event.results[i][j].transcript;
       };
 
-      function myFunction1() {
-          recognition.start();
-          let GG = document.getElementById("gg");
-          GG.style.visibility = "visible";
-      }
-
-      function myFunction2() {
-          recognition.stop();
-          let GG = document.getElementById("gg");
-          GG.style.visibility = "hidden";
-      }
+      recognition.start();
   </script>
 
-  <div class="wrapper" >
+  <div class="wrapper">
 
 
-    <canvas class="visualizer" id="gg" width="640" height="100" style="visibility:hidden"></canvas>
+    <canvas class="visualizer" width="640" height="100"></canvas> 
 
     <form class="controls">
       <div style="visibility:hidden">

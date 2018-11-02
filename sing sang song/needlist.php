@@ -7,13 +7,16 @@
   <body>
     <p align="center">123 321 1234567</p>
     <?php
+    
+    //require_once("DB_connect.php");
       //登入資料庫
+      
 	$server = '140.131.114.154';
 	$user = 'root123';
 	$pass = 'root';
 	$database = 'sing sang song';	
 	$conn = new PDO("mysql:host=$server;dbname=$database", $user, $pass,array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8')) or die('Error with MySQL connection');
-			
+		
       //指定每頁顯示幾筆記錄
       $records_per_page = 5;
 
@@ -27,46 +30,63 @@
       //$link = create_connection();
 			
       //執行 SQL 命令
-      $sql = "SELECT * FROM program ORDER BY date DESC";	
-      //$result = execute_sql($link, "sing sang song", $sql);
-      $sth = $conn->prepare($sql);
+      $sql = "SELECT prog_name,prog_datetime,prog_intro FROM project ORDER BY date DESC";	      
+      $count = $conn->prepare($sql);
 
       //取得記錄數
-      $count->execute();    
+      //$total_records = mysqli_num_rows($result);
+      $count->execute();   
+      $no=$count->rowCount();    
 
       //計算總頁數
-      $total_pages = ceil($count / $records_per_page);
+      //$total_pages = ceil( $count / $records_per_page);
+      $total_pages = ceil( $no / $records_per_page);
 
       //計算本頁第一筆記錄的序號
       $started_record = $records_per_page * ($page - 1);
 
       //將記錄指標移至本頁第一筆記錄的序號
-      mysqli_data_seek($result, $started_record);
-
-      //使用 $bg 陣列來儲存表格背景色彩
-      $bg[0] = "#D9D9FF";
-      $bg[1] = "#FFCAEE";
-      $bg[2] = "#FFFFCC";
-      $bg[3] = "#B9EEB9";
-      $bg[4] = "#B9E9FF";
+      //mysqli_data_seek($result, $started_record);       
 
       echo "<table width='800' align='center' cellspacing='3'>";
 
       //顯示記錄
+      /*
+      $sth = $conn->prepare($sql);
+      $sth->execute();
+      $rows = $sth->fetchAll(PDO::FETCH_ASSOC);
+      //$data=$conn->quer($sql)
       $j = 1;
-      while ($row = mysqli_fetch_assoc($result) and $j <= $records_per_page)
-      {
-        /*
-        echo "<tr bgcolor='" . $bg[$j - 1] . "'>";
-        echo "<td width='120' align='center'>
-              <img src='" . mt_rand(0, 9) . ".gif'></td>";
-        echo "<td>作者：" . $row["author"] . "<br>";
-        */
+      foreach($rows as $row){
         echo "<tr>"."主題：" . $row["prog_name"] . "<td>";
         echo "時間：" . $row["prog_datetime"] . "<td>";
         echo $row["content"] . "</td></tr>";
-        $j++;
+        $j++;	
+      } */
+
+      class Member
+      {
+          public function showMember()
+          {
+              echo "<br />";
+              echo "sn:".$this->prog_name."<br />";
+              echo "name:".$this->prog_datetime."<br />";
+              echo "mail:".$this->prog_intro."<br />";
+              //echo "home:".$this->home."<br />";
+              //echo "message:".$this->message."<br />";
+          }
       }
+       
+      //$sql = "SELECT * FROM project ORDER BY date DESC";
+      $sth = $conn->prepare($sql);
+      $sth->execute();
+      $rows = $sth->fetchAll(PDO::FETCH_CLASS,"Member");
+       
+      foreach($rows as $row)
+      {
+          $row->showMember();
+      }
+      
       echo "</table>" ;
 
       //產生導覽列
@@ -87,9 +107,11 @@
         echo "<a href='index.php?page=". ($page + 1) . "'>下一頁</a> ";
       echo "</p>";
 
-      //釋放記憶體空間
+      //釋放記憶體空間  
+      /*
       mysqli_free_result($result);
-      mysqli_close($link);
+      mysqli_close($link);  
+      */
     ?>
     
   </body>

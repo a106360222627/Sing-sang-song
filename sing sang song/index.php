@@ -11,7 +11,7 @@
 
 		<!-- Header -->
 			<header id="header" class="alt">
-				<div class="logo" ><a href="login.php" style="font-family:Microsoft JhengHei;">登入 <span style="font-family:Microsoft JhengHei;">註冊</span></a></div>
+				<div class="logo" ><a href="login.php" style="font-family:Microsoft JhengHei;">登入 <span style="font-family:Microsoft JhengHei;"><a href="registor.php" style="font-family:Microsoft JhengHei;font-size:15px;">註冊</a></span></a></div>
 				<a href="#menu">Menu</a>
 			</header>
 
