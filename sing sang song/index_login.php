@@ -108,7 +108,7 @@
 									</header>
 									<p style="font-family:Microsoft JhengHei;"> 在工作或生活中想要剪輯一支影片、設計一支微電影,這時候是不是需要一些背景音樂或是利用配音增添一點色彩呢?這時侯你需要配上一些音效,需要旁白的聲音,讓影片中熙來攘往的城市場景多一種力量。一位好的配音員能夠賦予角色生命力。</p>
 									<footer class="align-center">
-										<a href="list.html" class="button alt" style="font-family:Microsoft JhengHei; font-weight:bold;">點擊進入</a>
+										<a href="list.php" class="button alt" style="font-family:Microsoft JhengHei; font-weight:bold;">點擊進入</a>
 									</footer>
 								</div>
 							</div>

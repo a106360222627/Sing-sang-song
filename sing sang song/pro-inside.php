@@ -33,7 +33,7 @@
 	$conn = new PDO("mysql:host=$server;dbname=$database", $user, $pass,array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8')) or die('Error with MySQL connection');
 	
 	
-	$sql = "SELECT * FROM `program` where prog_id='48'";
+	$sql = "SELECT * FROM `program` where prog_id='50'";
 	$query =$conn->query($sql);
 	$query->setFetchMode(PDO::FETCH_ASSOC);//
 	 foreach($query as $row)
@@ -58,9 +58,7 @@
 
 	<!-- Header -->
 	<header id="header" class="alt">
-		<div class="logo">
-			<a id="login_1" style="font-family:Microsoft JhengHei;">登入</button>
-				<span style="font-family:Microsoft JhengHei;">註冊</span>
+		<div class="logo">	<div class="logo" ><a href="index.php" style="font-family:Microsoft JhengHei;">登出  <a href="generic_login.php"> <span style="font-family:Microsoft JhengHei;">Ya-Wei，您好</span></a></a></div><span style="font-family:Microsoft JhengHei;">註冊</span>
 			</a>
 		</div>
 		<a href="#menu">Menu</a>
@@ -71,16 +69,16 @@
 	<nav id="menu">
 		<ul class="links">
 			<li>
-				<a href="index_login.html">首頁</a>
+				<a href="index_login.php">首頁</a>
 			</li>
 			<li>
-				<a href="generic_login.html">會員資料</a>
+				<a href="generic_login.php">會員資料</a>
 			</li>
 			<li>
-				<a href="vocal_login.html">搜尋聲音</a>
+				<a href="vocal_login.php">搜尋聲音</a>
 			</li>
 			<li>
-				<a href="login.html">登入</a>
+				<a href="index.php">登出</a>
 			</li>
 		</ul>
 	</nav>

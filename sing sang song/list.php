@@ -24,9 +24,8 @@
 <body>
 
 	<!-- Header -->
-	<header id="header" class="alt">
-		<div class="logo" ><a href="index.html" style="font-family:Microsoft JhengHei;">登出  <a href="generic_login.html"> <span style="font-family:Microsoft JhengHei;">Ya-Wei，您好</span></a></a></div>
-		<a href="#menu">Menu</a>
+	<header id="header" class="alt">	<div class="logo" ><a href="index.php" style="font-family:Microsoft JhengHei;">登出  <a href="generic_login.php"> <span style="font-family:Microsoft JhengHei;">Ya-Wei，您好</span></a></a></div>
+	<a href="#menu">Menu</a>
 	</header>
 
 
@@ -65,56 +64,54 @@
 	<div id="main" class="container">
 		<a href="demand.php" style="font-family:Microsoft JhengHei; font-weight:bold;"> <button id="demand"  >刊登需求</button> </a>
 		<div class="table-wrapper">
-			<table>
+		
+			<table> 
 				<thead>
 					<tr id="tr1" style="">
 						<th>標題</th>
 						<th>刊登時間</th>
-						<th>上傳者</th>
+						<th>內容</th>
 
 					</tr>
 				</thead>
 				<tbody>
-					<tr id="tr2" style="">
-						<td><a href="demandfotuser.html">【接案】兒童週刊配音</a></td>
-						<td>2018.10.01</td>
-						<td>Ya-Wei</td>
-					</tr>
-					<tr id="tr2" style="">
-						<td><a href="demandfotuser.html">【接案】英文配音人員</a></td>
-						<td>2018.09.20</td>
-						<td>xin rong</td>
-					</tr>
-					<tr id="tr2" style="">
-						<td><a href="demandfotuser.html">【接案】英文配音</a></td>
-						<td>2018.09.20</td>
-						<td>Trump</td>
-					</tr>
-					<tr id="tr2" style="">
-						<td><a href="demandfotuser.html">【接案】卡通配音人員</a></td>
-						<td>2018.09.23</td>
-						<td>Barack Obama</td>
-					</tr>
-					<tr id="tr2" style="">
-						<td><a href="demandfotuser.html">【接案】英文動畫人員</a></td>
-						<td>2018.07.15</td>
-						<td>Ya-Wei</td>
-					</tr>
-					<tr id="tr2" style="">
-						<td><a href="demandfotuser.html">【接案】台語配音</a></td>
-						<td>2018.08.10</td>
-						<td>Taylor</td>
-					</tr>
-					<tr id="tr2" style="">
-						<td><a href="demandfotuser.html">【接案】商業週刊配音</a></td>
-						<td>2018.08.18</td>
-						<td>yu husn</td>
-					</tr>
-				
-				</tbody>
+				<?php
+						include 'conn.php';
+						$conn=new conn();  
+						$total=$conn->getOne('select count(*) as total from program'); 
+						$total=$total['total'];	//總數據條數
+						$num=5;	//每頁顯示條數
+						$totalpage=ceil($total/$num);	//計算頁數
+						if(isset($_GET['page']) && $_GET['page']<=$totalpage){//這裡做了一個判斷，若get到數據並且該數據小於總頁數情況下才付給當前頁參數，否則跳轉到第一頁
+							$thispage=$_GET['page'];
+						}else{
+							$thispage=1;
+						}
+
+						//註意下面<< .($thispage-1)*$num.','.$num.'' >>部分，通過計算來確定從第幾條數據開始取出，當前頁數減去1後再乘以每頁顯示數據條數 .($thispage-1)*$num.','.$num.''
+						//$sql="SELECT prog_name , prog_datetime , prog_intro FROM program ORDER BY prog_datetime DESC"; 
+						$pages = ($thispage-1)*$num.','.$num.'';
+						$sql="SELECT prog_name , prog_datetime , prog_intro FROM program ORDER BY prog_id DESC LIMIT ".$pages.""; 
+						//$sql=$sql.($thispage-1)*$num.','.$num.'';
+						
+						$data=$conn->getAll($sql);
+						foreach($data as $k=>$v){
+							echo '<tr><td>'.'<a href="http://140.131.114.154/sing%20sang%20song/pro-inside.php">'.$v['prog_name'].'</td><td>'.$v['prog_datetime'].'</td><td>'.$v['prog_intro'].'</a>'.'</td></tr>';	
+						}  
+						
+				?>	
+				</tbody> 
 			</table>
-		</div>
-		<label style="font-size:15px;margin-left:430px;">第 <span style="color:blue; font-size:20px;">1</span> 2 3 4 5頁</label>
+		</div><div style="position: relative;left:500px; font-size:17px;">
+		<?php 
+			echo "第\t";
+			for($i=1;$i<=$totalpage;$i++){
+				echo '<a href="?page='.$i.'">'.$i.'</a> ';								
+				} 
+			echo "\t頁";
+		?></div>
+		<!-- <label style="font-size:15px;margin-left:430px;">第頁</label> -->
+						
 	</div>
 
 	</form>
