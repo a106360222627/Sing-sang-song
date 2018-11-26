@@ -81,8 +81,12 @@ div.vocal_2 label:nth-child(8){
 }
 #txt_title{
     position: relative;
-    top:-42px;
+    top:-30px;
     left: 110px;
     width: 300px;
     height: 30px;
+}
+.voicee{
+    position: relative;
+   
 }

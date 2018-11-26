@@ -52,9 +52,9 @@
 							<header class="align-center">
 								<a href="https://www.youtube.com/watch?v=cnevlbEy-Qo"><img src="images/GD.jpg" alt="" /></a>
 								<p>G-Dragon</p>
-								<h2 style="font-family:Microsoft JhengHei; font-weight:bold;">梓月穎</h2>
+								<h2 style="font-family:Microsoft JhengHei; font-weight:bold;">Ya-Wei</h2>
 							</header>
-							<p style="font-family:Microsoft JhengHei; font-weight:bold;">Saluton~</br>我是梓</br>一個就算玩pokemon go也不一定願意出門的人</br>Soy chica también soy gato, jaja.</p>
+							<p style="font-family:Microsoft JhengHei; font-weight:bold;">Saluton~</br>我是Ya-Wei</br>一個就算玩pokemon go也不一定願意出門的人</br>Soy chica también soy gato, jaja.</p>
 
 							<p style="font-family:Microsoft JhengHei; font-weight:bold;">喜歡唱歌，喜歡分享</br>現在還是配音菜鳥，未來繼續努力中！</br>喜歡配音的大家一起努力吧~</p>
 

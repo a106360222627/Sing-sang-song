@@ -4,6 +4,6 @@ $user = 'root123';
 $pass = 'root';
 $database = 'sing sang song';
 
-$conn = new PDO("mysql:host=$server;dbname=$database", $user, $pass,array(PDO::MYSQL_ATTR_INIT_COMMAND => "set names utf8")) or die('Error with MySQL connection');
+$conn = new PDO("mysql:host=$server;dbname=$database", $mes, $pass,array(PDO::MYSQL_ATTR_INIT_COMMAND => "set names utf8")) or die('Error with MySQL connection');
 
 ?>
