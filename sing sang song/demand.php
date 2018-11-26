@@ -114,7 +114,7 @@ VALUES (
 				<a href="vocal_login.php">搜尋聲音</a>
 			</li>
 			<li>
-				<a href="login.html">專案</a>
+				<a href="program_list.html">專案</a>
 			</li>
 			<li>
 				<a href="index.php">登出</a>

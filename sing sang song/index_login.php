@@ -34,6 +34,15 @@
 				<a href="vocal_login.php">搜尋聲音</a>
 			</li>
 			<li>
+                <a href="provide_login.php">提供聲音</a>
+            </li>
+            <li>
+                <a href="list.php">尋求聲音</a>
+            </li>
+            <li>
+                <a href="file:///C:/Users/USER/Desktop/STT/index.html">語音辨識</a>
+             </li>
+			<li>
 				<a href="program_list.html">專案</a>
 			</li>
 			<li>

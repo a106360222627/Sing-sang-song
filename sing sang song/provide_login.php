@@ -67,7 +67,7 @@
 	</section>
 
 	<!-- Main -->
-	<div id="main" class="container">
+	<div style=" width:800px;" id="main" class="container">
 
 
 		<!-- 音檔資料 -->
@@ -193,7 +193,7 @@
 						</form>
 						<br>
 						<br>
-						<input id="submit" name="submit" type="submit" class="button special" style="font-family:Microsoft JhengHei;" value="確認上傳">
+						<input style="position:relative; left:550px;" id="submit" name="submit" type="submit" class="button special" style="font-family:Microsoft JhengHei;" value="確認上傳">
 
 					</div>
 
