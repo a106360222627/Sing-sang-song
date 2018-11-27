@@ -47,7 +47,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="4" />
-          <entry key="html" value="60" />
+          <entry key="html" value="61" />
           <entry key="jpg" value="2" />
           <entry key="js" value="3" />
           <entry key="php" value="119" />
@@ -58,7 +58,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="4" />
-          <entry key="HTML" value="60" />
+          <entry key="HTML" value="61" />
           <entry key="Image" value="3" />
           <entry key="JavaScript" value="3" />
           <entry key="PHP" value="111" />
@@ -109,12 +109,12 @@
         <entry file="file://$PROJECT_DIR$/sing sang song/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
-              <caret line="23" column="78" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="78" />
+              <caret line="23" column="78" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="78" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sing sang song/index_login.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="551">
@@ -123,11 +123,22 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sing sang song/links.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#style#0;n#style#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sing sang song/assets/css_program_list/pro-inside.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="22" />
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -146,15 +157,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
               <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sing sang song/留言板.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -254,8 +256,8 @@
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1" />
     <option name="y" value="1" />
-    <option name="width" value="1637" />
-    <option name="height" value="872" />
+    <option name="width" value="2047" />
+    <option name="height" value="1090" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -381,18 +383,18 @@
       <workItem from="1539686709258" duration="2392000" />
       <workItem from="1539718374438" duration="40752000" />
       <workItem from="1540807528216" duration="17862000" />
-      <workItem from="1541134747865" duration="3317000" />
+      <workItem from="1541134747865" duration="3914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81661000" />
+    <option name="totallyTimeSpent" value="82258000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-6" y="-6" width="1549" height="845" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.22708039" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.21254125" />
       <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.17702845" />
       <window_info id="Favorites" order="2" sideWeight="0.5010846" side_tool="true" weight="0.17702845" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -422,13 +424,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sing sang song/123456789.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="7" selection-start-line="10" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/ch16/news/index.php" />
     <entry file="file://$PROJECT_DIR$/sing sang song/upload.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -669,14 +664,14 @@
     <entry file="file://$PROJECT_DIR$/sing sang song/assets/css_program_list/pro-inside.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="22" />
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sing sang song/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
-          <caret line="23" column="78" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="78" />
+          <caret line="23" column="78" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="78" />
         </state>
       </provider>
     </entry>
@@ -691,6 +686,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sing sang song/links.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#style#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
