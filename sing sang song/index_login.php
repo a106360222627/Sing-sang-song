@@ -45,6 +45,7 @@
 			<li>
 				<a href="program_list.html">專案</a>
 			</li>
+			
 			<li>
 				<a href="index.php">登出</a>
 			</li>
@@ -165,7 +166,7 @@
 					<div class="gallery">
 						<div>
 							<div class="image fit">
-								<a href="generic_login.php"><img src="images/p0.jpg" alt="" width="200" height="375" /></a>
+								<a href="links.html"><img src="images/p000.jpg" width="200" height="375"></a>
 							</div>
 						</div>
 						<div>

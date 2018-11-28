@@ -22,6 +22,7 @@
 					<li><a href="generic_login.php">履歷資料</a></li>
 					<li><a href="vocal_login.php">搜尋聲音</a></li>
 					<li><a href="file:///C:/Users/USER/Desktop/STT/index.html">語音辨識</a></li>
+					
 					<li><a href="index.php">登出</a></li>
 				</ul>
 			</nav>
@@ -140,7 +141,7 @@
 					<div class="gallery">
 						<div>
 							<div class="image fit">
-								<a href="generic_login.html"><img src="images/p0.jpg" alt="" width="200" height="375" /></a>
+								<a href="generic_login.html"></a>
 							</div>
 						</div>
 						<div>
