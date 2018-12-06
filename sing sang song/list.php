@@ -75,7 +75,7 @@
 	
 	<!-- Main -->
 	<div id="main" class="container">
-		<a href="demand.php" style="font-family:Microsoft JhengHei; font-weight:bold;"> <button id="demand"  >刊登需求</button> </a>
+		 <button id="demand" onclick="javascript:location.href='demand.php'" >刊登需求</button>
 		<div class="table-wrapper">
 		
 			<table> 

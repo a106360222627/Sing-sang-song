@@ -62,8 +62,8 @@ if (empty($_POST["txt_title"])) {
 	
 	}
 	
-$how= implode(',',$_POST['how']);
-$how=serialize($how);
+// $how= implode(',',$_POST['how']);
+// $how=serialize($how);
 
 $datetime = date ("Y-m-d H:i:s" , mktime(date('H')+8, date('i'), date('s'), date('m'), date('d'), date('Y'))) ; 
 
@@ -151,7 +151,7 @@ VALUES (
 	<p class="error"><span class="error">* 必填</span></p>
 		<!--============-表單===========-->
 		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data" method="POST">
-		
+		<!-- <form action="list.php" enctype="multipart/form-data" method="POST"> -->
 			<div class="6u 12u$(small)">
 			<span style="color: #FF0000;font-size:15px;position: relative;  left:25px;top:25px;">*</span><h3 >標題：<input style="position:relative; left:60px; top:0.5px;" id="txt_title"  type="text" name="txt_title" value="[接案]兒童週刊配音">
 			<span style="color: #FF0000;font-size:15px;position: relative;  right:20px;"><?php  echo $txt_titleErr;?>
@@ -232,7 +232,7 @@ VALUES (
 			<textarea placeholder="介紹專案內容、描述需求聲音個性類型" style=" resize:none;width:700px;height:100px;" id="txttt" name="txttt" >本專案需要四種類型聲音：溫柔、陽光、高亢、圓潤。四種聲音角色，可以依自己適合的類型選擇上傳，檔案不限</textarea>
 			<span class="error"><?php  echo $txtttErr;?>
 			<label class="btn btn-info">
-		<input id="submit" name="submit" type="submit" class="btn_enter" value="確認上傳">
+			<input id="submit" name="submit" type="submit" class="btn_enter" value="確認上傳" onclick="javascript:location.href='list.php'">
 
 		</form>
 
