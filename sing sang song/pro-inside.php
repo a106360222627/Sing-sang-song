@@ -104,7 +104,7 @@
 			<!--------------- -聲音類型- ---------------- -->
 			<div class="6u 12u$(small)">
 				<h3 class="h">需求類型</h3>
-				<div class="txt_in"><?php echo $classifi;?></div>
+				<div class="txt_in" style="font-size:18px;"><?php echo $classifi;?></div>
 			</div>
 
 		</form>
@@ -112,18 +112,18 @@
 		<!--==================專案簡介=====================-->
 		<h3>費用計算方式</h3>
 			<div>
-				<div class="txt_in"><?php echo $pay ;?>，<?php echo $price;?></div>
+				<div class="txt_in" style="font-size:18px;"><?php echo $pay ;?>，<?php echo $price;?></div>
 			</div>
-
+<br>
 		<!--==================上傳影片=====================-->
 		<h3>介紹檔案：</h3>
-		<img class="txt_in"src="showimg.php" style="width:500px; height:300px">
+		<img class="txt_in"src="showimg.php" style="width:500px; height:300px;">
 		
 
 
 		<!--==================專案簡介=====================-->
 		<h3>專案簡介</h3>
-		<p class="txt_in">
+		<p class="txt_in" style="font-size:18px;">
 		<?php echo $intro;?></p>
 
 		</form>

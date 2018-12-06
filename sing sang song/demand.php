@@ -31,7 +31,7 @@ $txt_titleErr = $moneyErr = $txtttErr =$vocalErr="";
 $txt_title = $money = $txttt = $vocal = $how = $datetime = $myallvocal ="";
 header("Content-Type:text/html;charset=utf-8");
 function test_input($data) {
-		$data = trim($data);//去除兩側空白
+	$data = trim($data);//去除兩側空白
    $data = stripslashes($data);//刪除反斜線
    $data = htmlspecialchars($data);
    return $data;
@@ -114,8 +114,21 @@ VALUES (
 				<a href="vocal_login.php">搜尋聲音</a>
 			</li>
 			<li>
+                <a href="provide_login.php">提供聲音</a>
+            </li>
+            <li>
+                <a href="list.php">尋求聲音</a>
+            </li>
+            <li>
+                <a href="file:///C:/Users/USER/Desktop/STT/index.html">語音辨識</a>
+             </li>
+			<li>
 				<a href="program_list.html">專案</a>
 			</li>
+			<li>
+				<a onclick="myFunction()">配音員專區</a>
+			</li>
+			
 			<li>
 				<a href="index.php">登出</a>
 			</li>
@@ -135,14 +148,15 @@ VALUES (
 	<!-- Main -->
 	<div id="main" class="container">
 	<h2 style="position: relative;left:50px;">刊登需求</h3>
+	<p class="error"><span class="error">* 必填</span></p>
 		<!--============-表單===========-->
 		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data" method="POST">
-		<p class="error"><span class="error">* 必填</span></p>
+		
 			<div class="6u 12u$(small)">
-			<span style="color: #FF0000;font-size:15px;position: relative;  left:27px;top:27px;">*</span><h3 class="h">標題：<input style=" position: relative; top:1px;left:5px;" id="txt_title"  type="text" name="txt_title" value="[接案]兒童週刊配音">
+			<span style="color: #FF0000;font-size:15px;position: relative;  left:25px;top:25px;">*</span><h3 >標題：<input style="position:relative; left:60px; top:0.5px;" id="txt_title"  type="text" name="txt_title" value="[接案]兒童週刊配音">
 			<span style="color: #FF0000;font-size:15px;position: relative;  right:20px;"><?php  echo $txt_titleErr;?>
 			<!--------------- -聲音類型- ---------------- -->
-			<div style="position: relative;right:45px;">
+			<div style="position: relative;right:30px;">
 				<h3 class="h">需求類型</h3>
 					
 					<div class="vocal_1">
@@ -206,7 +220,7 @@ VALUES (
 			</div>
 			<div class="clear"></div>
 			
-			<h3>選擇檔案</h3>
+			<h3>選擇檔案</h3><span style="font-size=10px; position: relative;  left:135px;top:-40px;">(檔案大小限制128MB以下)</span>
 			<div action=" " method="post" enctype="multipart/form-data">
 
 				<input type="file" name="file" id="file" />

@@ -26,25 +26,38 @@
 			</header>
 
 		<!-- Nav -->
-			<nav id="menu">
-            		<ul class="links">
-            			<li>
-            				<a href="index_login.php">首頁</a>
-            			</li>
-            			<li>
-            				<a href="generic_login.php">會員資料</a>
-            			</li>
-            			<li>
-            				<a href="vocal_login.php">搜尋聲音</a>
-            			</li>
-            			<li>
-            				<a href="program_list.html">專案</a>
-            			</li>
-            			<li>
-            				<a href="index.php">登出</a>
-            			</li>
-            		</ul>
-            	</nav>
+		<nav id="menu">
+		<ul class="links">
+			<li>
+				<a href="index_login.php">首頁</a>
+			</li>
+			<li>
+				<a href="generic_login.php">會員資料</a>
+			</li>
+			<li>
+				<a href="vocal_login.php">搜尋聲音</a>
+			</li>
+			<li>
+                <a href="provide_login.php">提供聲音</a>
+            </li>
+            <li>
+                <a href="list.php">尋求聲音</a>
+            </li>
+            <li>
+                <a href="file:///C:/Users/USER/Desktop/STT/index.html">語音辨識</a>
+             </li>
+			<li>
+				<a href="program_list.html">專案</a>
+			</li>
+			<li>
+				<a onclick="myFunction()">配音員專區</a>
+			</li>
+			
+			<li>
+				<a href="index.php">登出</a>
+			</li>
+		</ul>
+	</nav>
 
 		<!-- One -->
 			<section id="One" class="wrapper style3">
@@ -197,7 +210,7 @@
 												<td style="font-family:Microsoft JhengHei;">hey dude</td>
 												<td>
 													<audio controls>
-														<source  src="music/m3.mp3" type="audio/mpeg" >
+														<source onclick=" " src="music/m3.mp3" type="audio/mpeg" >
 														Your browser does not support the audio tag.
 													</audio>
 												</td>
@@ -255,7 +268,7 @@
             function myFunction() {
              let t = document.getElementById("tt");
                 t.style.display = "block";
-
+			alert("在此平台使用他人創作之前請先遵守CC授權條款");
 
                 for(let i=1 ; i++ ; i<=10){
                     let checkBox = document.getElementById("vocal"+i);
@@ -267,8 +280,9 @@
                         text.style.display = "none";
                         $("#tr"+i).hide();
                     }
-
+			
                 }
+				
             }
 
             $(document).ready(function(){

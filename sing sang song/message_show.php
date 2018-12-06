@@ -1,12 +1,16 @@
 <?php
 require("config2.php");
 $data=mysql_query('select * from guest order by guestTime desc')//讓資料由最新呈現到最舊
+header("Content-Type:text/html; charset=utf-8");
+
+
 ?>
 
 <!DOCTYPE html >
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <title>留言板</title>
 

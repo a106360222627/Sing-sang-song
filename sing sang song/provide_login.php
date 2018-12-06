@@ -14,7 +14,7 @@
 	<title>提供聲音</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/main2.css" />
 	<link rel="stylesheet" href="assets/css_CC/super-awesome.css" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -37,24 +37,37 @@
 
 	<!-- Nav -->
 	<nav id="menu">
-    		<ul class="links">
-    			<li>
-    				<a href="index_login.php">首頁</a>
-    			</li>
-    			<li>
-    				<a href="generic_login.php">會員資料</a>
-    			</li>
-    			<li>
-    				<a href="vocal_login.php">搜尋聲音</a>
-    			</li>
-    			<li>
-    				<a href="program_list.html">專案</a>
-    			</li>
-    			<li>
-    				<a href="index.php">登出</a>
-    			</li>
-    		</ul>
-    	</nav>
+		<ul class="links">
+			<li>
+				<a href="index_login.php">首頁</a>
+			</li>
+			<li>
+				<a href="generic_login.php">會員資料</a>
+			</li>
+			<li>
+				<a href="vocal_login.php">搜尋聲音</a>
+			</li>
+			<li>
+                <a href="provide_login.php">提供聲音</a>
+            </li>
+            <li>
+                <a href="list.php">尋求聲音</a>
+            </li>
+            <li>
+                <a href="file:///C:/Users/USER/Desktop/STT/index.html">語音辨識</a>
+             </li>
+			<li>
+				<a href="program_list.html">專案</a>
+			</li>
+			<li>
+				<a onclick="myFunction()">配音員專區</a>
+			</li>
+			
+			<li>
+				<a href="index.php">登出</a>
+			</li>
+		</ul>
+	</nav>
 
 	<!-- One -->
 	<section id="One" class="wrapper style3">
@@ -79,7 +92,7 @@
 					<h4 style="font-family:Microsoft JhengHei;">作品名稱</h3>
 						<input type="text" name="name" id="name" value="" placeholder="-請輸入作品名稱-" />
 						<br>
-						<h4 style="font-family:Microsoft JhengHei;">上傳檔案</h3>
+						<h4 style="font-family:Microsoft JhengHei;">上傳檔案(檔案大小限制128MB以下)</h4>
 							<input type="file" name="file" id="file" />
 							<br>
 							<br>

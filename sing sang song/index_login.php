@@ -45,6 +45,9 @@
 			<li>
 				<a href="program_list.html">專案</a>
 			</li>
+			<li>
+				<a onclick="Function()">配音員專區</a>
+			</li>
 			
 			<li>
 				<a href="index.php">登出</a>
@@ -192,6 +195,23 @@
 					&copy; NTUB IMD
 				</div>
 			</footer>
+
+
+
+
+
+<script>
+function Function() {
+  
+  if (confirm("此專區為付費專區")) {
+	window.location.assign("http://140.131.114.154/sing%20sang%20song/sample_All_CreateOrder.php");
+	
+  } else {
+  
+  }
+  
+}
+</script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

@@ -24,14 +24,38 @@
 			</header>
 
 		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index_login.php">首頁</a></li>
-					<li><a href="generic_login.php">會員資料</a></li>
-					<li><a href="elements.html">設定</a></li>
-					<li><a href="index.php">登出</a></li>
-				</ul>
-			</nav>
+		<nav id="menu">
+		<ul class="links">
+			<li>
+				<a href="index_login.php">首頁</a>
+			</li>
+			<li>
+				<a href="generic_login.php">會員資料</a>
+			</li>
+			<li>
+				<a href="vocal_login.php">搜尋聲音</a>
+			</li>
+			<li>
+                <a href="provide_login.php">提供聲音</a>
+            </li>
+            <li>
+                <a href="list.php">尋求聲音</a>
+            </li>
+            <li>
+                <a href="file://C:\Users\107203\Desktop\STT\index.html">語音辨識</a>
+             </li>
+			<li>
+				<a href="program_list.html">專案</a>
+			</li>
+			<li>
+				<a onclick="myFunction()">配音員專區</a>
+			</li>
+			
+			<li>
+				<a href="index.php">登出</a>
+			</li>
+		</ul>
+	</nav>
 
 		<!-- One -->
 			<section id="One" class="wrapper style3">

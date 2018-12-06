@@ -1,5 +1,6 @@
 <?php
 include(config2.php);
+header("Content-Type:text/html; charset=utf-8");
 
 $guestName=$_POST['guestName'];
 $guestEmail=$_POST['guestEmail'];
