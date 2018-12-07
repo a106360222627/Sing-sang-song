@@ -138,12 +138,12 @@
 						<p class="special" style="font-family:Microsoft JhengHei; font-weight:bold;">點擊下方圖示 深入了解我們</p>
 						<h2 style="font-family:Microsoft JhengHei; font-weight:bold;">其他連結</h2>
 					</header>
-					<div class="gallery">
+					<div class="gallery">						
 						<div>
 							<div class="image fit">
-								<a href="generic_login.html"></a>
+								<a href="links.html"><img src="images/p000.jpg" width="200" height="375"></a>
 							</div>
-						</div>
+						</div>						
 						<div>
 							<div class="image fit">
 								<a href="vocal_login.html"><img src="images/p1.jpg" alt=""  width="200" height="375" /></a>
